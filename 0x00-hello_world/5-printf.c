@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
  * main- is the entry point for the program
+ *
  * Return: zero if no error, and non zero if there is error
  */
 int main(void)

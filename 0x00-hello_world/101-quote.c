@@ -1,6 +1,7 @@
 #include <unistd.h>
 /**
  * main- is the main program entry point.
+ *
  * Return: one when it's successful
  */
 int main(void)

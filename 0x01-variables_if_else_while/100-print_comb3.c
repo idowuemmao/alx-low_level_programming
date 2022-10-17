@@ -18,10 +18,9 @@ int main(void)
 			putchar((g % 10) + '0');
 
 			if (d == 89 && g == 90)
-			{
-				putchar(',');
-				putchar(' ');
-			}
+			continue;
+			putchar(',');
+			putchar(' ');
 		}
 	}
 	putchar('\n');

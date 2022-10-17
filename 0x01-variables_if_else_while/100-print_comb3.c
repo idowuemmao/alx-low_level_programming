@@ -14,7 +14,7 @@ int main(void)
 	{
 		for (g = d + 1; g < 10; g++)
 		{
-			if (d > n)
+			if (d > g)
 			{
 				putchar((d % 10) + '0');
 				putchar((g % 10) + '0');

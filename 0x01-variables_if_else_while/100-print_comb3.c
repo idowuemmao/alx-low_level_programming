@@ -12,15 +12,18 @@ int main(void)
 
 	for (d = 0; d < 9; d++)
 	{
-		for (g = d + 1; g < 9; g++)
+		for (g = d + 1; g < 10; g++)
 		{
-			putchar((d % 10) + '0');
-			putchar((g % 10) + '0');
-
-			if (d == 8 && g == 9)
-			continue;
-			putchar(',');
-			putchar(' ');
+			if (d > n)
+			{
+				putchar((d % 10) + '0');
+				putchar((g % 10) + '0');
+				if (d != 8 || g != 9)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');

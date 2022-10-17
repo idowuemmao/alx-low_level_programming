@@ -14,7 +14,7 @@ int main(void)
 	{
 		for ()
 		{
-			putchar((d /10) + '0');
+			putchar((d / 10) + '0');
 			putchar((d % 10) + '0');
 		}
 		if (d != 89)

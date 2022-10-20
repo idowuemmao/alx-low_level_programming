@@ -9,14 +9,24 @@
 
 int main(void)
 {
-	unsigned long int i, n = 612852475143;
+	long int a, b c;
 
-	for (i = 3; i < 782849; i = i + 2)
+	b = 612852475143;
+	a = 3;
+	c = 0;
+	while (b != 1)
 	{
-		while ((n % i == 0) && (n != i))
-			n = n / i;
+		if (b % a == 0)
+		{
+			b = b / a;
+			if (a > c)
+				c = a;
+		}
+		else
+		{
+			a++
+		}
 	}
-	printf("%lu\n", n);
-
+	printf("%ld\n", c);
 	return (0);
 }

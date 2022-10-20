@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * main - prints prime factors
@@ -9,7 +10,7 @@
 
 int main(void)
 {
-	long int a, b c;
+	long int a, b, c;
 
 	b = 612852475143;
 	a = 3;

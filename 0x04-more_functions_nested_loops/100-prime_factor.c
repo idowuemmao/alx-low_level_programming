@@ -10,24 +10,18 @@
 
 int main(void)
 {
-	long int a, b, c;
+	long a, b;
+	long number = 612852475143;
+	double square = sqrt(number);
 
-	b = 612852475143;
-	a = 3;
-	c = 0;
-	while (b != 1)
+	for (a = 1; a <= square; a++)
 	{
-		if (b % a == 0)
+		if (number % a == 0)
 		{
-			b = b / a;
-			if (a > c)
-				c = a;
-		}
-		else
-		{
-			a++
+			b = number / a;
 		}
 	}
-	printf("%ld\n", c);
+	printf("%ld\n", b);
+
 	return (0);
 }

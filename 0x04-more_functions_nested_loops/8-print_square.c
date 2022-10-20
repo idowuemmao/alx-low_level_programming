@@ -3,6 +3,7 @@
 /**
  * print_square - function to print a square, followed by
  * a new line
+ * @size: THe size of the square
  * Done by emmygreat
  *
  * Return: void
@@ -16,7 +17,7 @@ void print_square(int size)
 		_putchar('\n');
 	for (t = 0; t < size; t++)
 	{
-		for (y = 0; y < size; y++)
+		for (y = 0; y < (size); y++)
 		{
 			_putchar('#');
 		}

@@ -9,16 +9,17 @@
 
 int main(void)
 {
-	int w;
+	int i;
 
 	printf("Infinite loop incoming: (\n");
 
-	w = 0;
+	i = 0;
 
-	/* while (w < 10)*/
+	/* while (i < 10)*/
 	/* {*/
-	/* putchar(w);*/
+	/* putchar(i);*/
 	/* }*/
+
 	printf("Infinite loop avoided! \\0/\n");
 
 	return (0);

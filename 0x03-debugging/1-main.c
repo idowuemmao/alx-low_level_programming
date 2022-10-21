@@ -2,8 +2,6 @@
 
 /**
  * main - causes an infinite loop
- * Done by emmygreat
- *
  * Return: 0
  */
 
@@ -17,7 +15,7 @@ int main(void)
 
 	/* while (i < 10)*/
 	/* {*/
-	/* putchar(i);*/
+	/* 	putchar(i);*/
 	/* }*/
 
 	printf("Infinite loop avoided! \\0/\n");

@@ -2,9 +2,6 @@
 
 /**
  * main - used to test function that prints if integer is positive
- *
- * done by emmygreat
- *
  * Return: 0
  */
 

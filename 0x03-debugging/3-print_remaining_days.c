@@ -1,10 +1,9 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
  * print_remaining_days - takes a date and prints
- * @month: month
- * @day: day
+ * @month: month in number format
+ * @day: day of the month
  * @year: year
  * DOne by emmygreat
  * Return: void
@@ -12,7 +11,7 @@
 
 void print_remaining_days(int month, int day, int year)
 {
-	if ((year % 4 == 0) && (year % 400 == 0 || year % 100 != 0))
+	if ((year % 400 == 0) && (year % 4 == 0 || year % 100 != 0))
 	{
 		if (month >= 3 && day >= 60)
 		{

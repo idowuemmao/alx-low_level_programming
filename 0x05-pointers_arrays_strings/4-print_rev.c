@@ -3,7 +3,7 @@
 /**
  * print_rev - a function that prints a string, in reverse, followed
  * by a new line
- * @str: the string
+ * @s: the string
  *
  * done by emmygreat
  * Return: The length of the string
@@ -11,16 +11,15 @@
 
 void print_rev(char *s)
 {
-	int i = 0, k, m;
+	int i = 0;
 
-	while (str[i] != '\0')
+	while (s[i] != '\0')
 	{
 		i++;
 	}
-	m = i;
-	for (k = m - 1; k >= 0; k--)
+	for (i -= 1; i >= 0; i--)
 	{
-		_putchar(s[k]);
+		_putchar(s[i]);
 	}
 	_putchar('\n');
 }

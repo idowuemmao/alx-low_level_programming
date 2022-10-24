@@ -5,13 +5,13 @@
  * _putchar - print each character
  * @s: char to check
  *
- * Return: 0 is success
+ * Return: void
  */
 
 void rev_string(char *s)
 {
-	int d, c, k;
-	char *a, b;
+	int m, c, k;
+	char *a, aux;
 
 	a = s;
 
@@ -25,11 +25,11 @@ void rev_string(char *s)
 		a++;
 	}
 
-	for (d = 1; d < (c / 2); d++)
+	for (m = 0; m < (c / 2); m++)
 	{
-		b = s[d];
-		s[d] = *a;
-		*a = b;
+		aux = s[m];
+		s[m] = *a;
+		*a = aux;
 		a--;
 	}
 }

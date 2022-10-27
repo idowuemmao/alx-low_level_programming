@@ -19,7 +19,7 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		*(dest + w) = *(src + w);
 	}
-	for (w = 0; w < n; w++)
+	for (; w < n; w++)
 	{
 		*(dest + w) = '\0';
 	}

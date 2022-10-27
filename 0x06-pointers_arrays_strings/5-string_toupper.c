@@ -14,12 +14,11 @@ char *string_toupper(char *p)
 {
 	int g = 0;
 
-	while (p[g])
+	while (*(p + g))
 	{
-		if (p[g] >= 97 && p[g] <= 122)
-		{
-			p[g] -= 32;
-		}
-		g++
+		if (*(p + g) >= 'a' && *(p + g) <= 'z')
+			*(p + g) -= 'a' - 'A';
+		g++;
 	}
+	return (p);
 }

@@ -9,7 +9,7 @@
  *
  * done by emmygreat
  *
- * Return void
+ * Return: void
  */
 
 void print_line(char *c, int s, int l)
@@ -19,7 +19,7 @@ void print_line(char *c, int s, int l)
 	for (k = 0; k <= 9; k++)
 	{
 		if (k <= s)
-			printf("%02x", c[1 * 10 + k]);
+			printf("%02x", c[l * 10 + k]);
 		else
 			printf(" ");
 		if (k % 2)

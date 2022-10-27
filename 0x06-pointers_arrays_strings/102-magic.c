@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 
 /**
@@ -9,12 +8,14 @@
 
 int main(void)
 {
-	int m;
+	int n;
 	int a[5];
 	int *p;
 
 	a[2] = 1024;
-	p = &m;
+	p = &n;
+
+
 
 	*(p + 5) = 98;
 

@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagsums - function that prints the sum of
@@ -12,12 +13,17 @@
 
 void print_diagsums(int *a, int size)
 {
-	int g, h = 0, j = 0;
+	int g, h = 0, j = 0, k;
 
 	for (g = 0; g < size; g++)
 	{
-		h += a[(size + 1) * g];
-		j += a[(size - 1) * (g + 1)];
+		k = (g * size) + g;
+		h += a[k];
 	}
-	print ("%d, %d\n", h, j);
+	for (g = 1; g <= size; g++)
+	{
+		k = (g * size) - g;
+		j += a[k];
+	}
+	printf("%d, %d\n", h, j);
 }

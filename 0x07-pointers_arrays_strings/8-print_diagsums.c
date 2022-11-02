@@ -12,11 +12,11 @@
 
 void print_diagsums(int *a, int size)
 {
-	int a, b, c, d = 0, e = 0;
+	int f, b, c, d = 0, e = 0;
 
-	for (a = 0; a < size; a++)
+	for (f = 0; f < size; f++)
 	{
-		c = (a * size) + a;
+		c = (f * size) + f;
 		d += *(a + c);
 	}
 	for (b = 0; b < size; b++)

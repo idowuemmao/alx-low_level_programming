@@ -9,7 +9,6 @@
  * @ptr: pointer to the memory
  * @old_size: the size in bytes of allocated space
  * @new_size: the neww size in bytes of new memory block
- 
  * Return: pointer allocate new size memory
  */
 

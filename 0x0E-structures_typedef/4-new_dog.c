@@ -5,24 +5,24 @@ int _strlen(char *s);
 char *_strcpy(char *dest, char *src);
 
 /**
- * new_dog - ...
- * @name: ...
- * @age: ...
- * @owner: ...
+ * new_dog - create new dog
+ * @name: name of dog
+ * @age: age of dog
+ * @owner: owner of dog
  * done by emmygreat
  *
- * Return: ...
+ * Return: pointer to new dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *cutie_dog;
-	int name_l = 0, own_1 = 0;
+	int name_l = 0, own_l = 0;
 
 	if (name != NULL && owner != NULL)
 	{
 		name_l = strlen(name) + 1;
-		own_1 = strlen(owner) + 1;
+		own_l = strlen(owner) + 1;
 		cutie_dog = malloc(sizeof(dog_t));
 
 		if (cutie_dog == NULL)

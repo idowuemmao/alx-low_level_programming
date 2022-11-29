@@ -6,10 +6,12 @@
   * delete_nodeint_at_index - ...
   * @head: ...
   * @index: ...
-  * done by emmygreat
+  * done bby emmygreat
+  *
   *
   * Return: ...
   */
+
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	unsigned int count = 1;
